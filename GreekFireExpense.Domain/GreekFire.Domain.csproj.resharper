@@ -1,0 +1,13 @@
+<Configuration>
+  <NamespaceFolders>
+    <SkipFolder>4FDEB53C-4817-439B-B041-159790EBB37B/d:Expense/d:Builders</SkipFolder>
+    <SkipFolder>4FDEB53C-4817-439B-B041-159790EBB37B/d:Expense/d:Commands</SkipFolder>
+    <SkipFolder>4FDEB53C-4817-439B-B041-159790EBB37B/d:Expense/d:DomainObjects</SkipFolder>
+    <SkipFolder>4FDEB53C-4817-439B-B041-159790EBB37B/d:Expense/d:Dtos</SkipFolder>
+    <SkipFolder>4FDEB53C-4817-439B-B041-159790EBB37B/d:Expense/d:Factories</SkipFolder>
+    <SkipFolder>4FDEB53C-4817-439B-B041-159790EBB37B/d:Expense/d:Repositories</SkipFolder>
+    <SkipFolder>4FDEB53C-4817-439B-B041-159790EBB37B/d:Expense/d:Services</SkipFolder>
+    <SkipFolder>4FDEB53C-4817-439B-B041-159790EBB37B/d:Expense/d:Specifications</SkipFolder>
+    <SkipFolder>4FDEB53C-4817-439B-B041-159790EBB37B/d:Expense</SkipFolder>
+  </NamespaceFolders>
+</Configuration>

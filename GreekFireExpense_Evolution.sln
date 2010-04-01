@@ -1,0 +1,210 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreekFire.Domain", "GreekFireExpense.Domain\GreekFire.Domain.csproj", "{4FDEB53C-4817-439B-B041-159790EBB37B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_Data", "3_Data", "{004AB464-91D8-4607-BC91-0BD6453F1C70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7E589F16-B3FD-45DF-870C-428ACD30AF96}"
+	ProjectSection(SolutionItems) = preProject
+		GreekFireExpense_Evolution.vsmdi = GreekFireExpense_Evolution.vsmdi
+		GreekFireExpense_Evolution1.vsmdi = GreekFireExpense_Evolution1.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_Domain", "2_Domain", "{09429703-FA6F-4E6B-AA53-6C174DBB6B1F}"
+EndProject
+Project("{5B268528-5715-3389-943A-D0DF94E66CB6}") = "GreekFire.Data.M", "GreekFireExpense.Data.M\GreekFire.Data.M.mproj", "{3E49B8F3-FF56-4D94-97F4-846BAAF71D11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreekFire.Data.Sql", "GreekFireExpense.Data.Sql\GreekFire.Data.Sql.csproj", "{C3CFD35A-202F-450A-8CD4-DF645BD52202}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5_Client", "5_Client", "{E3A88F34-12C4-495D-9B52-D3A572BCF766}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreekFire.Client.Shell", "GreekFireExpense.Client.Shell\GreekFire.Client.Shell.csproj", "{C5627378-2266-4CAE-88B4-FDE5E8329DCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreekFire.Client.Module.Expenses", "GreekFireExpense.Client.ExpenseModule\GreekFire.Client.Module.Expenses.csproj", "{2B567BB6-55B9-438F-A709-DA58CF23CC2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Foundation", "1_Foundation", "{4C56CE41-33A4-4386-9421-53FD913ED181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreekFire.Foundation", "GreekFireExpense.Foundation\GreekFire.Foundation.csproj", "{E917B759-5363-4C57-8CC0-418FFF0622FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreekFire.Foundation_Test", "GreekFireExpense.Foundation.Test\GreekFire.Foundation_Test.csproj", "{7DF64B97-2239-4854-9F12-C0905C43DE8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreekFire.Client.Infrastructure", "GreekFireExpense.Client.Infrastructure\GreekFire.Client.Infrastructure.csproj", "{5AE8A43D-AC35-46FC-9037-8FFEACD5FFC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{B2FE42C4-5B46-4E97-8D88-E659796D1498}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_Dlls", "0_Dlls", "{567B59AF-2930-4A6D-8B40-5101DBB33940}"
+	ProjectSection(SolutionItems) = preProject
+		Dlls\AutoMapper.dll = Dlls\AutoMapper.dll
+		Dlls\Castle.Core.dll = Dlls\Castle.Core.dll
+		Dlls\Castle.DynamicProxy2.dll = Dlls\Castle.DynamicProxy2.dll
+		Dlls\FluentNHibernate.dll = Dlls\FluentNHibernate.dll
+		Dlls\Iesi.Collections.dll = Dlls\Iesi.Collections.dll
+		Dlls\log4net.dll = Dlls\log4net.dll
+		Dlls\Microsoft.Practices.ObjectBuilder2.dll = Dlls\Microsoft.Practices.ObjectBuilder2.dll
+		Dlls\Microsoft.Practices.Unity.dll = Dlls\Microsoft.Practices.Unity.dll
+		Dlls\NHibernate.dll = Dlls\NHibernate.dll
+		Dlls\NHibernate.Linq.dll = Dlls\NHibernate.Linq.dll
+		Dlls\nunit.framework.dll = Dlls\nunit.framework.dll
+		Dlls\PostSharp.Core.dll = Dlls\PostSharp.Core.dll
+		Dlls\PostSharp.Laos.dll = Dlls\PostSharp.Laos.dll
+		Dlls\PostSharp.Public.dll = Dlls\PostSharp.Public.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreekFire.Data.NHibernate", "GreekFire.Data.NHibernate\GreekFire.Data.NHibernate.csproj", "{DB8E2B8E-B950-4267-8110-70BF5323286C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreekFire.NHibernateConsole", "GreekFire.NHibernateConsole\GreekFire.NHibernateConsole.csproj", "{11916286-EA58-4D8B-ABD5-124AD38246FA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4EEB96D2-C51A-4F0D-9A02-6E076EAD7238} = {4EEB96D2-C51A-4F0D-9A02-6E076EAD7238}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4_Service", "4_Service", "{0B4AFBF3-E716-4AB9-A013-9C67158F3AEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreekFire.Services", "GreekFire.Services\GreekFire.Services.csproj", "{4EEB96D2-C51A-4F0D-9A02-6E076EAD7238}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreekFire.Domain_Test", "GreekFire.Domain_Test\GreekFire.Domain_Test.csproj", "{5AF97692-5C25-4FD4-8A3B-00C7BDC17832}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreekFire.Data.NHibernate_Test", "GreekFire.Data.NHibernate_Test\GreekFire.Data.NHibernate_Test.csproj", "{3CBC74BA-D99F-420E-B217-B9A472D99DA2}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 14
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs07.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GreekFire.Data.NHibernate\\GreekFire.Data.NHibernate.csproj
+		SccProjectTopLevelParentUniqueName1 = GreekFireExpense_Evolution.sln
+		SccProjectName1 = GreekFire.Data.NHibernate
+		SccLocalPath1 = GreekFire.Data.NHibernate
+		SccProjectUniqueName2 = GreekFire.NHibernateConsole\\GreekFire.NHibernateConsole.csproj
+		SccProjectTopLevelParentUniqueName2 = GreekFireExpense_Evolution.sln
+		SccProjectName2 = GreekFire.NHibernateConsole
+		SccLocalPath2 = GreekFire.NHibernateConsole
+		SccProjectUniqueName3 = GreekFireExpense.Foundation\\GreekFire.Foundation.csproj
+		SccProjectTopLevelParentUniqueName3 = GreekFireExpense_Evolution.sln
+		SccProjectName3 = GreekFireExpense.Foundation
+		SccLocalPath3 = GreekFireExpense.Foundation
+		SccProjectUniqueName4 = GreekFireExpense.Foundation.Test\\GreekFire.Foundation_Test.csproj
+		SccProjectTopLevelParentUniqueName4 = GreekFireExpense_Evolution.sln
+		SccProjectName4 = GreekFireExpense.Foundation.Test
+		SccLocalPath4 = GreekFireExpense.Foundation.Test
+		SccProjectUniqueName5 = GreekFire.Services\\GreekFire.Services.csproj
+		SccProjectTopLevelParentUniqueName5 = GreekFireExpense_Evolution.sln
+		SccProjectName5 = GreekFire.Services
+		SccLocalPath5 = GreekFire.Services
+		SccProjectUniqueName6 = GreekFireExpense.Domain\\GreekFire.Domain.csproj
+		SccProjectTopLevelParentUniqueName6 = GreekFireExpense_Evolution.sln
+		SccProjectName6 = GreekFireExpense.Domain
+		SccLocalPath6 = GreekFireExpense.Domain
+		SccProjectUniqueName7 = GreekFireExpense.Data.M\\GreekFire.Data.M.mproj
+		SccProjectTopLevelParentUniqueName7 = GreekFireExpense_Evolution.sln
+		SccProjectName7 = GreekFireExpense.Data.M
+		SccLocalPath7 = GreekFireExpense.Data.M
+		SccProjectUniqueName8 = GreekFireExpense.Data.Sql\\GreekFire.Data.Sql.csproj
+		SccProjectTopLevelParentUniqueName8 = GreekFireExpense_Evolution.sln
+		SccProjectName8 = GreekFireExpense.Data.Sql
+		SccLocalPath8 = GreekFireExpense.Data.Sql
+		SccProjectUniqueName9 = GreekFireExpense.Client.Infrastructure\\GreekFire.Client.Infrastructure.csproj
+		SccProjectTopLevelParentUniqueName9 = GreekFireExpense_Evolution.sln
+		SccProjectName9 = GreekFireExpense.Client.Infrastructure
+		SccLocalPath9 = GreekFireExpense.Client.Infrastructure
+		SccProjectUniqueName10 = GreekFireExpense.Client.ExpenseModule\\GreekFire.Client.Module.Expenses.csproj
+		SccProjectTopLevelParentUniqueName10 = GreekFireExpense_Evolution.sln
+		SccProjectName10 = GreekFireExpense.Client.ExpenseModule
+		SccLocalPath10 = GreekFireExpense.Client.ExpenseModule
+		SccProjectUniqueName11 = GreekFireExpense.Client.Shell\\GreekFire.Client.Shell.csproj
+		SccProjectTopLevelParentUniqueName11 = GreekFireExpense_Evolution.sln
+		SccProjectName11 = GreekFireExpense.Client.Shell
+		SccLocalPath11 = GreekFireExpense.Client.Shell
+		SccProjectUniqueName12 = GreekFire.Domain_Test\\GreekFire.Domain_Test.csproj
+		SccProjectTopLevelParentUniqueName12 = GreekFireExpense_Evolution.sln
+		SccProjectName12 = GreekFire.Domain_Test
+		SccLocalPath12 = GreekFire.Domain_Test
+		SccProjectUniqueName13 = GreekFire.Data.NHibernate_Test\\GreekFire.Data.NHibernate_Test.csproj
+		SccProjectTopLevelParentUniqueName13 = GreekFireExpense_Evolution.sln
+		SccProjectName13 = GreekFire.Data.NHibernate_Test
+		SccLocalPath13 = GreekFire.Data.NHibernate_Test
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = GreekFireExpense_Evolution1.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FDEB53C-4817-439B-B041-159790EBB37B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FDEB53C-4817-439B-B041-159790EBB37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FDEB53C-4817-439B-B041-159790EBB37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FDEB53C-4817-439B-B041-159790EBB37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E49B8F3-FF56-4D94-97F4-846BAAF71D11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E49B8F3-FF56-4D94-97F4-846BAAF71D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E49B8F3-FF56-4D94-97F4-846BAAF71D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E49B8F3-FF56-4D94-97F4-846BAAF71D11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3CFD35A-202F-450A-8CD4-DF645BD52202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3CFD35A-202F-450A-8CD4-DF645BD52202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3CFD35A-202F-450A-8CD4-DF645BD52202}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C3CFD35A-202F-450A-8CD4-DF645BD52202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3CFD35A-202F-450A-8CD4-DF645BD52202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3CFD35A-202F-450A-8CD4-DF645BD52202}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C5627378-2266-4CAE-88B4-FDE5E8329DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5627378-2266-4CAE-88B4-FDE5E8329DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5627378-2266-4CAE-88B4-FDE5E8329DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5627378-2266-4CAE-88B4-FDE5E8329DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B567BB6-55B9-438F-A709-DA58CF23CC2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B567BB6-55B9-438F-A709-DA58CF23CC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B567BB6-55B9-438F-A709-DA58CF23CC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B567BB6-55B9-438F-A709-DA58CF23CC2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E917B759-5363-4C57-8CC0-418FFF0622FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E917B759-5363-4C57-8CC0-418FFF0622FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E917B759-5363-4C57-8CC0-418FFF0622FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E917B759-5363-4C57-8CC0-418FFF0622FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DF64B97-2239-4854-9F12-C0905C43DE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DF64B97-2239-4854-9F12-C0905C43DE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DF64B97-2239-4854-9F12-C0905C43DE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DF64B97-2239-4854-9F12-C0905C43DE8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE8A43D-AC35-46FC-9037-8FFEACD5FFC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE8A43D-AC35-46FC-9037-8FFEACD5FFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE8A43D-AC35-46FC-9037-8FFEACD5FFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE8A43D-AC35-46FC-9037-8FFEACD5FFC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB8E2B8E-B950-4267-8110-70BF5323286C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB8E2B8E-B950-4267-8110-70BF5323286C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB8E2B8E-B950-4267-8110-70BF5323286C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB8E2B8E-B950-4267-8110-70BF5323286C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11916286-EA58-4D8B-ABD5-124AD38246FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11916286-EA58-4D8B-ABD5-124AD38246FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11916286-EA58-4D8B-ABD5-124AD38246FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11916286-EA58-4D8B-ABD5-124AD38246FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EEB96D2-C51A-4F0D-9A02-6E076EAD7238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EEB96D2-C51A-4F0D-9A02-6E076EAD7238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EEB96D2-C51A-4F0D-9A02-6E076EAD7238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EEB96D2-C51A-4F0D-9A02-6E076EAD7238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF97692-5C25-4FD4-8A3B-00C7BDC17832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF97692-5C25-4FD4-8A3B-00C7BDC17832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF97692-5C25-4FD4-8A3B-00C7BDC17832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF97692-5C25-4FD4-8A3B-00C7BDC17832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CBC74BA-D99F-420E-B217-B9A472D99DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CBC74BA-D99F-420E-B217-B9A472D99DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CBC74BA-D99F-420E-B217-B9A472D99DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CBC74BA-D99F-420E-B217-B9A472D99DA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4FDEB53C-4817-439B-B041-159790EBB37B} = {09429703-FA6F-4E6B-AA53-6C174DBB6B1F}
+		{5AF97692-5C25-4FD4-8A3B-00C7BDC17832} = {09429703-FA6F-4E6B-AA53-6C174DBB6B1F}
+		{3E49B8F3-FF56-4D94-97F4-846BAAF71D11} = {004AB464-91D8-4607-BC91-0BD6453F1C70}
+		{C3CFD35A-202F-450A-8CD4-DF645BD52202} = {004AB464-91D8-4607-BC91-0BD6453F1C70}
+		{DB8E2B8E-B950-4267-8110-70BF5323286C} = {004AB464-91D8-4607-BC91-0BD6453F1C70}
+		{3CBC74BA-D99F-420E-B217-B9A472D99DA2} = {004AB464-91D8-4607-BC91-0BD6453F1C70}
+		{C5627378-2266-4CAE-88B4-FDE5E8329DCB} = {E3A88F34-12C4-495D-9B52-D3A572BCF766}
+		{2B567BB6-55B9-438F-A709-DA58CF23CC2A} = {E3A88F34-12C4-495D-9B52-D3A572BCF766}
+		{5AE8A43D-AC35-46FC-9037-8FFEACD5FFC8} = {E3A88F34-12C4-495D-9B52-D3A572BCF766}
+		{E917B759-5363-4C57-8CC0-418FFF0622FF} = {4C56CE41-33A4-4386-9421-53FD913ED181}
+		{7DF64B97-2239-4854-9F12-C0905C43DE8E} = {4C56CE41-33A4-4386-9421-53FD913ED181}
+		{11916286-EA58-4D8B-ABD5-124AD38246FA} = {B2FE42C4-5B46-4E97-8D88-E659796D1498}
+		{4EEB96D2-C51A-4F0D-9A02-6E076EAD7238} = {0B4AFBF3-E716-4AB9-A013-9C67158F3AEC}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestLists xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestList name="NewExpense" id="05b89676-f9c2-465b-b8c9-75854bd3273b" parentListId="5469bd5d-a8a6-4eae-90a5-32db6899e513">
+    <TestLinks>
+      <TestLink id="4a95cfbe-c7d9-57fb-5b7d-1f78e7e8137d" name="approved_expense_should_not_be_null" storage="greekfire.domain_test\bin\debug\greekfire.domain_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="f1d0b65d-6336-2171-7279-e43a899197da" name="Should_add_line_item_to_expense" storage="greekfire.domain_test\bin\debug\greekfire.domain_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="7174cb75-3bd4-1e1d-02e9-513578aef0af" name="should_set_approval_date" storage="greekfire.domain_test\bin\debug\greekfire.domain_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="Builder" id="12820943-164b-4047-bcfa-12729bcc25af" parentListId="05b89676-f9c2-465b-b8c9-75854bd3273b">
+    <TestLinks>
+      <TestLink id="202832cc-7ed0-f431-8387-ded4b232a71b" name="should_set_title" storage="greekfire.domain_test\bin\debug\greekfire.domain_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="692319db-8b0c-dc0c-dd2a-a493ef139338" name="should_set_description" storage="greekfire.domain_test\bin\debug\greekfire.domain_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="2_Domain" id="5469bd5d-a8a6-4eae-90a5-32db6899e513" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6" />
+  <TestList name="Builder" id="6cb4b075-a687-48a9-9604-fd9149f85666" parentListId="f7018744-2eea-4d0c-bc9b-a1cbaeb276c1">
+    <TestLinks>
+      <TestLink id="970acd75-b688-7484-17f8-279e3991f44f" name="should_set_title" storage="greekfire.domain_test\bin\debug\greekfire.domain_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="1550494d-2221-a1e3-c277-0f360bc43cd0" name="should_set_approval_date" storage="greekfire.domain_test\bin\debug\greekfire.domain_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="6b741bd2-b9dc-85b9-cd24-fa32e42095ee" name="should_set_description" storage="greekfire.domain_test\bin\debug\greekfire.domain_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="UnitOfWork" id="7aea1384-5e39-4cb4-9835-d077e00cbce3" parentListId="de67e76d-8911-4262-9dbb-2395ae11ae65">
+    <TestLinks>
+      <TestLink id="28ebd75c-575b-2f61-bd29-84383a71e46b" name="repository_should_be_null" storage="greekfireexpense.foundation.test\bin\debug\greekfireexpense.foundation_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="5003451f-ec06-014f-e0e3-95d406e91743" name="respository_should_not_be_null" storage="greekfireexpense.foundation.test\bin\debug\greekfireexpense.foundation_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="Lists of Tests" id="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <RunConfiguration id="3d503ab5-c1e2-4fc9-9003-cd223fc59038" name="Local Test Run" storage="localtestrun.testrunconfig" type="Microsoft.VisualStudio.TestTools.Common.TestRunConfiguration, Microsoft.VisualStudio.QualityTools.Common,   PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestList>
+  <TestList name="ChangeSet" id="8ff41d3c-0718-4922-bb6f-ce6dea72e7a9" parentListId="de67e76d-8911-4262-9dbb-2395ae11ae65">
+    <TestLinks>
+      <TestLink id="ef76594e-cb44-3e06-527b-e6a2b8f8ba85" name="should_increase_update_count_by_one" storage="greekfireexpense.foundation.test\bin\debug\greekfireexpense.foundation_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="e4a59d85-0586-9d60-54b8-0bdd7cb8888a" name="should_add_object_to_insert_collection" storage="greekfireexpense.foundation.test\bin\debug\greekfireexpense.foundation_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="187cafa5-a1bb-fde4-04bd-67a398502211" name="Should_reduce_update_count_to_zero" storage="greekfireexpense.foundation.test\bin\debug\greekfireexpense.foundation_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="f05c687e-95cc-3c3e-fdbc-ffc5c8cb3899" name="should_add_object_to_update_collection" storage="greekfireexpense.foundation.test\bin\debug\greekfireexpense.foundation_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="1adffbe2-ba5d-4968-f9c0-2a5d160fcf6b" name="Should_reduce_delete_count_to_zero" storage="greekfireexpense.foundation.test\bin\debug\greekfireexpense.foundation_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="141241af-11a7-ea09-7579-ba6331fd3d1d" name="should_increase_insert_count_by_one" storage="greekfireexpense.foundation.test\bin\debug\greekfireexpense.foundation_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="9332ef02-7e58-634d-cb8f-04842b008188" name="should_increase_delete_count_by_one" storage="greekfireexpense.foundation.test\bin\debug\greekfireexpense.foundation_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="40c9c1db-1e80-d655-5549-4af26291bfd0" name="should_add_object_to_delete_collection" storage="greekfireexpense.foundation.test\bin\debug\greekfireexpense.foundation_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="44c27652-ceaa-7b77-f789-46616f486ee2" name="Should_reduce_insert_count_to_zero" storage="greekfireexpense.foundation.test\bin\debug\greekfireexpense.foundation_test.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="1_Foundation" id="de67e76d-8911-4262-9dbb-2395ae11ae65" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6" />
+  <TestList name="ApprovedExpense" id="f7018744-2eea-4d0c-bc9b-a1cbaeb276c1" parentListId="5469bd5d-a8a6-4eae-90a5-32db6899e513" />
+</TestLists>

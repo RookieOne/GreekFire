@@ -1,0 +1,9 @@
+<Configuration>
+  <NamespaceFolders>
+    <SkipFolder>5AF97692-5C25-4FD4-8A3B-00C7BDC17832/d:Expense/d:ApprovedExpense/d:BuilderTests</SkipFolder>
+    <SkipFolder>5AF97692-5C25-4FD4-8A3B-00C7BDC17832/d:Expense/d:ApprovedExpense</SkipFolder>
+    <SkipFolder>5AF97692-5C25-4FD4-8A3B-00C7BDC17832/d:Expense/d:Contexts</SkipFolder>
+    <SkipFolder>5AF97692-5C25-4FD4-8A3B-00C7BDC17832/d:Expense/d:NewExpenseTests</SkipFolder>
+    <SkipFolder>5AF97692-5C25-4FD4-8A3B-00C7BDC17832/d:Expense</SkipFolder>
+  </NamespaceFolders>
+</Configuration>

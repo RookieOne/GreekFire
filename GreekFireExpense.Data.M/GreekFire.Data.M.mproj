@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MTarget>Repository</MTarget>
+    <MPackageScript>true</MPackageScript>
+    <MPackageImage>true</MPackageImage>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <MTargetsPath Condition="$(MTargetsPath) == ''">$(MSBuildExtensionsPath)\Microsoft\M\v1.0</MTargetsPath>
+    <ProjectName>GreekFireExpense.Data.M</ProjectName>
+    <RootNamespace>GreekFireExpense.Data.M</RootNamespace>
+    <AssemblyName>GreekFireExpense.Data.M</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <Name>GreekFire.Data.M</Name>
+    <ProjectGuid>{3e49b8f3-ff56-4d94-97f4-846baaf71d11}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ExpenseModel.m" />
+  </ItemGroup>
+  <Import Project="$(MTargetsPath)\MProject.targets" />
+</Project>

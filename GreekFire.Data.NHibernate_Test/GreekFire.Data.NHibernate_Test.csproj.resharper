@@ -1,0 +1,6 @@
+<Configuration>
+  <NamespaceFolders>
+    <SkipFolder>3CBC74BA-D99F-420E-B217-B9A472D99DA2/d:Expense/d:Repositories</SkipFolder>
+    <SkipFolder>3CBC74BA-D99F-420E-B217-B9A472D99DA2/d:Expense</SkipFolder>
+  </NamespaceFolders>
+</Configuration>

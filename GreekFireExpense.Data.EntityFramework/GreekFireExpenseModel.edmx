@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="GreekFireExpenseDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityContainer Name="GreekFireExpenseDBModelStoreContainer">
+          <EntitySet Name="ExpenseLineItems" EntityType="GreekFireExpenseDBModel.Store.ExpenseLineItems" store:Type="Tables" Schema="GreekFireExpense" />
+          <EntitySet Name="Expenses" EntityType="GreekFireExpenseDBModel.Store.Expenses" store:Type="Tables" Schema="GreekFireExpense" />
+          <AssociationSet Name="FK_ExpenseLineItems_Expense_GreekFireExpense_Expenses" Association="GreekFireExpenseDBModel.Store.FK_ExpenseLineItems_Expense_GreekFireExpense_Expenses">
+            <End Role="Expenses" EntitySet="Expenses" />
+            <End Role="ExpenseLineItems" EntitySet="ExpenseLineItems" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ExpenseLineItems">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Amount" Type="decimal" Nullable="false" Precision="28" Scale="6" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Expense" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Expenses">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_ExpenseLineItems_Expense_GreekFireExpense_Expenses">
+          <End Role="Expenses" Type="GreekFireExpenseDBModel.Store.Expenses" Multiplicity="1" />
+          <End Role="ExpenseLineItems" Type="GreekFireExpenseDBModel.Store.ExpenseLineItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Expenses">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ExpenseLineItems">
+              <PropertyRef Name="Expense" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GreekFireExpenseDBModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="GreekFireExpenseDBEntities">
+          <EntitySet Name="ExpenseLineItems" EntityType="GreekFireExpenseDBModel.ExpenseLineItems" />
+          <EntitySet Name="Expenses" EntityType="GreekFireExpenseDBModel.Expenses" />
+          <AssociationSet Name="FK_ExpenseLineItems_Expense_GreekFireExpense_Expenses" Association="GreekFireExpenseDBModel.FK_ExpenseLineItems_Expense_GreekFireExpense_Expenses">
+            <End Role="Expenses" EntitySet="Expenses" />
+            <End Role="ExpenseLineItems" EntitySet="ExpenseLineItems" /></AssociationSet></EntityContainer>
+        <EntityType Name="ExpenseLineItems">
+          <Key>
+            <PropertyRef Name="Id" /></Key>
+          <Property Name="Id" Type="Int64" Nullable="false" />
+          <Property Name="Amount" Type="Decimal" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" />
+          <NavigationProperty Name="Expenses" Relationship="GreekFireExpenseDBModel.FK_ExpenseLineItems_Expense_GreekFireExpense_Expenses" FromRole="ExpenseLineItems" ToRole="Expenses" /></EntityType>
+        <EntityType Name="Expenses">
+          <Key>
+            <PropertyRef Name="Id" /></Key>
+          <Property Name="Id" Type="Int64" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" />
+          <Property Name="Title" Type="String" Nullable="false" />
+          <NavigationProperty Name="ExpenseLineItems" Relationship="GreekFireExpenseDBModel.FK_ExpenseLineItems_Expense_GreekFireExpense_Expenses" FromRole="Expenses" ToRole="ExpenseLineItems" /></EntityType>
+        <Association Name="FK_ExpenseLineItems_Expense_GreekFireExpense_Expenses">
+          <End Type="GreekFireExpenseDBModel.Expenses" Role="Expenses" Multiplicity="1" />
+          <End Type="GreekFireExpenseDBModel.ExpenseLineItems" Role="ExpenseLineItems" Multiplicity="*" /></Association></Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="GreekFireExpenseDBModelStoreContainer" CdmEntityContainer="GreekFireExpenseDBEntities">
+          <EntitySetMapping Name="ExpenseLineItems">
+            <EntityTypeMapping TypeName="IsTypeOf(GreekFireExpenseDBModel.ExpenseLineItems)">
+              <MappingFragment StoreEntitySet="ExpenseLineItems">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Id" ColumnName="Id" /></MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Expenses">
+            <EntityTypeMapping TypeName="IsTypeOf(GreekFireExpenseDBModel.Expenses)">
+              <MappingFragment StoreEntitySet="Expenses">
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Id" ColumnName="Id" /></MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <AssociationSetMapping Name="FK_ExpenseLineItems_Expense_GreekFireExpense_Expenses" TypeName="GreekFireExpenseDBModel.FK_ExpenseLineItems_Expense_GreekFireExpense_Expenses" StoreEntitySet="ExpenseLineItems">
+            <EndProperty Name="ExpenseLineItems">
+              <ScalarProperty Name="Id" ColumnName="Id" /></EndProperty>
+            <EndProperty Name="Expenses">
+              <ScalarProperty Name="Id" ColumnName="Expense" /></EndProperty></AssociationSetMapping></EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="GreekFireExpenseModel">
+        <EntityTypeShape EntityType="GreekFireExpenseDBModel.ExpenseLineItems" Width="1.5" PointX="3" PointY="0.875" Height="1.787985026041667" />
+        <EntityTypeShape EntityType="GreekFireExpenseDBModel.Expenses" Width="1.5" PointX="0.75" PointY="0.875" Height="1.787985026041667" IsExpanded="true" />
+        <AssociationConnector Association="GreekFireExpenseDBModel.FK_ExpenseLineItems_Expense_GreekFireExpense_Expenses" >
+          <ConnectorPoint PointX="2.25" PointY="1.7689925130208335" />
+          <ConnectorPoint PointX="3" PointY="1.7689925130208335" /></AssociationConnector></Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
